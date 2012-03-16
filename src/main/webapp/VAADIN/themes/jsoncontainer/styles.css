@@ -1,0 +1,130 @@
+@import url(../reindeer/styles.css);
+
+.v-app {
+	background-color: #6489aB;
+	background-image: -webkit-radial-gradient(circle, white, #6489aB);
+	background-image: -moz-radial-gradient(circle, white, #6489aB);
+	font-family: Tahoma, Verdana, sans-serif;
+}
+
+.v-app textarea.jsonarea {
+	font-family: Monaco, "Courier New", monospace;
+	font-weight: normal;
+	font-size: 12px;
+	background: #fff;
+	color: #2f2f2f;
+	text-shadow: #fff 0 1px 1px;
+	padding: 10px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.v-panel {
+	background: #e3eaf1; /* for browsers without rgba support */
+	background: rgba(255, 255, 255, 0.6);
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+.v-panel-captionwrap,
+.v-panel-deco {
+	display: none;
+}
+.v-panel-content {
+	border: none;
+}
+.v-panel-content > div {
+	background: transparent;	
+}
+
+.v-button-caption {
+	color: #14395b;
+}
+
+.v-label-h1 {
+	text-shadow: #fff 0 1px 1px;
+	float: left;
+}
+.v-label-tagline {
+	float: right;
+	line-height: 24px;
+	font-size: 13px;
+	font-style: italic;
+	text-shadow: 0 1px 1px white;
+	padding-right: 4px;
+}
+
+.v-table-row-odd {
+	background: #f0f7ff;
+}
+.v-table-header td {
+	color: #34597b;
+	background-color: #cdd9e6;
+	background-image: -webkit-linear-gradient(white, #a0b8ce);
+	background-image: -moz-linear-gradient(white, #a0b8ce);
+}
+.v-table-header-wrap {
+	text-transform: capitalize;
+	font-size: 11px;
+}
+.v-table-caption-container {
+	padding-top: 3px;	
+}
+
+.v-Notification-error h1 {
+	font-size: 18px;
+}
+.v-Notification-error p {
+	display: block;
+	text-align: center;
+	margin-top: 6px;
+}
+
+.edit-tooltip {
+	position: absolute;
+	top: 80px;
+	left: 50%;
+	width: 170px;
+	background: url(img/close-9x9.png) 5px 5px no-repeat rgba(0, 0, 0, 0.6);
+	margin-left: -600px;
+	color: white;
+	padding: 10px 10px 10px 20px;
+	opacity: 1;
+	overflow: visible;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-animation: floating ease-in-out 4s infinite;
+	-webkit-transition: opacity linear 0.4s;
+	-moz-animation: floating ease-in-out 4s infinite;
+	-moz-transition: opacity linear 0.4s;
+}
+.edit-tooltip * {
+	cursor: pointer;
+}
+.edit-tooltip:after {
+	content: url(img/arrowhead.png);
+	position: absolute;
+	right: -15px;
+	top: 19px;
+}
+.edit-tooltip.dismissed {
+	opacity: 0;
+}
+@-webkit-keyframes floating {
+	0%, 30%, 70% {
+		-webkit-transform: translate3d(0, 0, 0);
+	}
+	50% {
+		-webkit-transform: translate3d(7px, 0, 0);
+	}
+}
+@-moz-keyframes floating {
+	0%, 30%, 70% {
+		-moz-transform: translate3d(0, 0, 0);
+	}
+	50% {
+		-moz-transform: translate3d(7px, 0, 0);
+	}
+}
