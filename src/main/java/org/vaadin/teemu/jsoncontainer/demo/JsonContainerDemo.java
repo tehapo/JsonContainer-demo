@@ -67,7 +67,7 @@ public class JsonContainerDemo extends Application {
 
         Panel mainPanel = new Panel();
         mainPanel.setContent(mainLayout);
-        mainPanel.setWidth("750px");
+        mainPanel.setWidth("650px");
         mainPanel.addComponent(getHeader());
         mainPanel.addComponent(jsonArea);
         mainPanel.addComponent(updateButton);
