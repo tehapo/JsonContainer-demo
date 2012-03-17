@@ -5,12 +5,14 @@ import org.vaadin.teemu.jsoncontainer.JsonContainer;
 import com.vaadin.Application;
 import com.vaadin.event.LayoutEvents.LayoutClickEvent;
 import com.vaadin.event.LayoutEvents.LayoutClickListener;
+import com.vaadin.terminal.ExternalResource;
 import com.vaadin.ui.Alignment;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.Component;
 import com.vaadin.ui.CssLayout;
 import com.vaadin.ui.Label;
+import com.vaadin.ui.Link;
 import com.vaadin.ui.Panel;
 import com.vaadin.ui.Table;
 import com.vaadin.ui.TextArea;
@@ -90,10 +92,15 @@ public class JsonContainerDemo extends Application {
         tagline.setWidth(null);
         tagline.setStyleName("tagline");
 
+        Link downloadLink = new Link("Available on the Vaadin Directory »",
+                new ExternalResource("http://vaadin.com/addon/jsoncontainer"));
+
         CssLayout header = new CssLayout();
+        header.addStyleName("header");
         header.setWidth("100%");
         header.addComponent(h1);
         header.addComponent(tagline);
+        header.addComponent(downloadLink);
         return header;
     }
 

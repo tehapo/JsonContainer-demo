@@ -42,17 +42,20 @@
 	color: #14395b;
 }
 
-.v-label-h1 {
+.header .v-label-h1 {
 	text-shadow: #fff 0 1px 1px;
 	float: left;
 }
-.v-label-tagline {
+.header .v-label-tagline {
 	float: right;
-	line-height: 24px;
 	font-size: 13px;
 	font-style: italic;
 	text-shadow: 0 1px 1px white;
 	padding-right: 4px;
+}
+.header .v-link {
+	float: right;
+	clear: right;
 }
 
 .v-table-row-odd {
